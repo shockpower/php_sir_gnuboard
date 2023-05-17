@@ -65,8 +65,8 @@ if (defined('G5_IS_ADMIN')) {
     if (defined('_SHOP_')) $shop_css = '_shop';
     echo '<link rel="stylesheet" href="'.run_replace('head_css_url', G5_CSS_URL.'/'.(G5_IS_MOBILE?'mobile':'default').$shop_css.'.css?ver='.G5_CSS_VER, G5_URL).'">'.PHP_EOL;
 
-    //!커스텀 스타일 경로 
-    echo "<link rel='canonical' href='https://getbootstrap.com/docs/5.3/examples/carousel/' />";
+    //커스텀 스타일 경로 
+    echo "<link rel='canonical' href='https://getbootstrap.com/docs/5.2/examples/carousel/' />";
     echo "<link href='".G5_CSS_URL."/bootstrap.min.css' rel='stylesheet' />";
     
 }
@@ -191,7 +191,6 @@ if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
 
-    <!-- <link href="./css/carousel.css" rel="stylesheet" /> -->
     <link href="<?php echo G5_CSS_URL; ?>/carousel.css" rel="stylesheet" />
 
 </head>

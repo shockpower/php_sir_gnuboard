@@ -22,6 +22,7 @@ if (G5_IS_MOBILE) {
 
 </main>
 
+<!-- 자바스크립트 경로 설정 변경 -->
 <script src="<?php echo G5_JS_URL; ?>/bootstrap.bundle.min.js"></script>
 
 <?php

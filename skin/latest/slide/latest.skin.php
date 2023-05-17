@@ -19,7 +19,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="<?=$i;?>" class="active"
             aria-current="true" aria-label="Slide <?=$s;?>"></button>
         <?php 
-        $s++;
+            $s++;
         }
          ?>
     </div>
@@ -39,12 +39,12 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
             $img = G5_IMG_URL.'/no_img.png';
             $thumb['alt'] = '이미지가 없습니다.';
         }
-        $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" style="weight:100%;">';
+        $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" style="width:100%;">';
         $img_link_html = '<a href="'.$wr_href.'" class="lt_img" >'.run_replace('thumb_image_tag', $img_content, $thumb).'</a>';
         ?>
 
         <div class="carousel-item active">
-
+            <!-- 이미지 정보 -->
             <?php echo $img_link_html; ?>
             <div class="container">
                 <div class="carousel-caption text-start">
