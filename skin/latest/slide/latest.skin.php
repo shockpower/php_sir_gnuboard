@@ -16,7 +16,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         $s = 1;
         for ($i=0; $i<$list_count; $i++) {
         ?>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="<?=$i;?>" class="active"
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="<?=$i;?>" class="<?=($i==0)?'active':'';?>"
             aria-current="true" aria-label="Slide <?=$s;?>"></button>
         <?php 
             $s++;
@@ -43,15 +43,14 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         $img_link_html = '<a href="'.$wr_href.'" class="lt_img" >'.run_replace('thumb_image_tag', $img_content, $thumb).'</a>';
         ?>
 
-        <div class="carousel-item active">
+        <div class="carousel-item <?=($i==0)?'active':'';?>">
             <!-- 이미지 정보 -->
             <?php echo $img_link_html; ?>
             <div class="container">
                 <div class="carousel-caption text-start">
-                    <h1>Example headline.</h1>
+                    <h1><?php echo $list[$i]['wr_subject']; ?> </h1>
                     <p>
-                        Some representative placeholder content for the first slide of
-                        the carousel.
+                        <?php echo $list[$i]['wr_content']; ?>
                     </p>
                     <p>
                         <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
