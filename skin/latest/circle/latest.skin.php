@@ -18,18 +18,17 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     $img_link_html = '';
     
     $wr_href = get_pretty_url($bo_table, $list[$i]['wr_id']);
-
     
-        $thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);
+    $thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);
 
-        if($thumb['src']) {
-            $img = $thumb['src'];
-        } else {
-            $img = G5_IMG_URL.'/no_img.png';
-            $thumb['alt'] = '이미지가 없습니다.';
-        }
+    if($thumb['src']) {
+        $img = $thumb['src'];
+    } else {
+        $img = G5_IMG_URL.'/no_img.png';
+        $thumb['alt'] = '이미지가 없습니다.';
+    }
         $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" style="width:140px; height:140px; border-radius:50%;">';
-        $img_link_html = '<a href="'.$wr_href.'" class="lt_img" >'.run_replace('thumb_image_tag', $img_content, $thumb).'</a>';
+    $img_link_html = '<a href="'.$wr_href.'" class="lt_img" >'.run_replace('thumb_image_tag', $img_content, $thumb).'</a>';
         
     ?>
     <div class="col-lg-4">

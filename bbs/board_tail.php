@@ -17,3 +17,5 @@ if (G5_IS_MOBILE) {
         }
     }
 }
+?>
+</div>
