@@ -27,8 +27,9 @@ if (G5_IS_MOBILE) {
 
 <div class="container">
     <!-- <div
-        style="margin-top: 20px; height:300px; width: 100%; overflow: hidden; background: url('https://s3.ap-northeast-2.amazonaws.com/icunow.co.kr/2017/04/23165142/coverr.png');">
-        <h1 style="width: 100%; height:200px; margin: 120px auto; color:#fff ;font-weight:bold; text-align:center;">
-            <?= $board['bo_subject']?>
-        </h1>
-    </div> -->
+        style="margin-top: 20px; height:300px; width: 100%; overflow: hidden; background: url('
+    https://s3.ap-northeast-2.amazonaws.com/icunow.co.kr/2017/04/23165142/coverr.png');">
+    <h1 style="width: 100%; height:200px; margin: 120px auto; color:#fff ;font-weight:bold; text-align:center;">
+        <?= $board['bo_subject']?>
+</h1>
+</div> -->

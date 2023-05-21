@@ -18,7 +18,7 @@ include_once(G5_PATH.'/head.php');
 ?>
 
 <?php 
-echo latest('slide', 'slide', 3, 23);
+echo latest('slide', 'slide', 3, 23); //상단 배너 나오는 게시물 설정 
 ?>
 
 
@@ -29,7 +29,7 @@ echo latest('slide', 'slide', 3, 23);
 <div class="container marketing">
 
     <?php 
-    echo latest('circle', 'circle', 3, 23);
+    echo latest('circle', 'circle', 3, 23); // 첫번째 나오는 게시물 3개 설정 
     ?>
     <!-- START THE FEATURETTES -->
 
@@ -38,7 +38,7 @@ echo latest('slide', 'slide', 3, 23);
     <div class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">
-                First featurette heading.
+                !!!First featurette heading.
                 <span class="text-body-secondary">It’ll blow your mind.</span>
             </h2>
             <p class="lead">
